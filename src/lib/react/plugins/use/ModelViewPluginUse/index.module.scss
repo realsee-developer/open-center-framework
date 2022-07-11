@@ -1,0 +1,27 @@
+.five-ModelViewPlugin {
+  max-width: 150px;
+  max-height: 180px;
+  width: 25vw;
+  height: 30vw;
+  z-index: 1;
+  cursor: pointer;
+
+  position: fixed;
+  right: 24px;
+  top: 64px;
+  background: linear-gradient(180deg, rgb(0 0 0 / 15%), rgb(0 0 0 / 35%));
+  opacity: 0; 
+  border-radius: 2px 2px;
+
+  pointer-events: none;
+}
+
+.five-ModelViewPlugin--visible {
+  opacity: 0.9;
+  pointer-events: all;
+}
+
+.five-ModelViewPlugin--visible:hover {
+  opacity: 1;
+  transition: opacity .5s;
+}
